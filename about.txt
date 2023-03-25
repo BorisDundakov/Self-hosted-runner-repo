@@ -1,0 +1,22 @@
+Self-hosted runners offer more control of hardware, operating system, and software tools than GitHub-hosted runners provide. 
+With self-hosted runners, you can create custom hardware configurations that meet your needs with processing power or memory to run larger jobs,
+install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
+Self-hosted runners can be physical, virtual, in a container, on-premises, or in a cloud.
+
+You can add self-hosted runners at various levels in the management hierarchy:
+
+    Repository-level runners are dedicated to a single repository.
+    Organization-level runners can process jobs for multiple repositories in an organization.
+    Enterprise-level runners can be assigned to multiple organizations in an enterprise account.
+
+
+Your runner machine connects to GitHub using the GitHub Actions self-hosted runner application. The GitHub Actions runner application is open source.
+You can contribute and file issues in the runner repository. 
+When a new version is released, the runner application automatically updates itself when a job is assigned to the runner,
+or within a week of release if the runner hasn't been assigned any jobs.
+
+A self-hosted runner is automatically removed from GitHub if it has not connected to GitHub Actions for more than 14 days.
+An ephemeral self-hosted runner is automatically removed from GitHub if it has not connected to GitHub Actions for more than 1 day.
+
+For more information about installing and using self-hosted runners, see "Adding self-hosted runners" and "Using self-hosted runners in a workflow."
+
